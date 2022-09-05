@@ -1,0 +1,23 @@
+  312  sudo apt-get install espeak-ng
+  313  sudo apt-get install python-espeak
+  314  pip3 install py-espeak-ng pyttsx3
+
+  315  cd additional_packages/
+  316  wget http://espeak.sourceforge.net/data/ru_dict-48.zip
+  317  unzip ru_dict-48.zip
+
+  318  sudo mv ru_dict-48 /usr/lib/i386-linux-gnu/espeak-data/ru_dict
+  320  sudo mv ru_dict-48 /usr/lib/x86_64-linux-gnu/espeak-data/ru_dict
+  324  sudo mv ru_dict-48 /usr/lib/x86_64-linux-gnu/espeak-data/ru_dict
+
+  327  espeak-ng -v en "The Cranes are Flying"
+
+
+
+
+_________________________________________________________
+
+https://launchpad.net/~linvinus/+archive/ubuntu/rhvoice
+
+
+354  echo "Проверка" | RHVoice-client -s Anna+CLB | aplay
